@@ -17,16 +17,16 @@ Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour 
 4. Exception Handling is yet to be Added.
 
 5. Details of the restful Operations:
-====================================
-1. **GET** : http://localhost:9191/ticketService/seatsAvailable ***[Returns Total Availble Seats Open for Booking]***
-**Sample Respone:**
+
+  A. **GET** : http://localhost:9191/ticketService/seatsAvailable ***[Returns Total Availble Seats Open for Booking]***
+  *Sample Respone:*
 ```
 {
     "number": 290
 }
 ```
-2. **POST** : http://localhost:9191/ticketService/findAndHoldSeats?seatCount=2&emailId=XYZ@gmail.com ***[[Used to Hold the number of Seats passed in the request]***[
-**Sample Respone:**
+  B. **POST** : http://localhost:9191/ticketService/findAndHoldSeats?seatCount=2&emailId=XYZ@gmail.com ***[Used to Hold the number of Seats passed in the request]***
+  *Sample Respone:*
 ```
 {
     "holdStatus": "SUCCESS",
@@ -52,8 +52,8 @@ Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour 
 }
 ```
 
-3. **PATCH** : http://localhost:9191/ticketService/reserveSeats?onHoldId=1960160567 ***[Service used to Confirm the Booking by passing Hold Id]***
-**Sample Respone:**
+  C. **PATCH** : http://localhost:9191/ticketService/reserveSeats?onHoldId=1960160567 ***[Service used to Confirm the Booking by passing Hold Id]***
+  *Sample Respone:*
 ```
 {
     "bookingStatus": "SUCCESS",
