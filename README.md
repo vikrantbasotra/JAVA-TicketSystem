@@ -2,7 +2,7 @@
 ## About the Application:
 Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour of a Tickiting System.
 
-There are few Assumptions which are as follows.
+**There are few Assumptions which are as follows.**
 
 1. This Application is used for making reservations in Auditorium whose size is taken as : 9 X 33 ( Rows X Columns). This configuration can be changed in config.properties files , if required.
 
@@ -19,16 +19,16 @@ There are few Assumptions which are as follows.
 5. Details of the restful Operations:
 ====================================
 1. GET : http://localhost:9191/ticketService/seatsAvailable [Returns Total Availble Seats Open for Booking]
-
-Sample Respone:
+**Sample Respone:**
+'''
 {
     "number": 290
 }
-
+'''
 2. POST: http://localhost:9191/ticketService/findAndHoldSeats?seatCount=2&emailId=XYZ@gmail.com [Used to Hold the number of Seats passed in the request]
-
-Sample Respone:
-%{
+**Sample Respone:**
+'''
+{
     "holdStatus": "SUCCESS",
     "seatList": [
         {
@@ -47,20 +47,21 @@ Sample Respone:
         }
     ],
     "holdStartTS": "2020-07-29T14:46:21.358+00:00",
-    "emailID": "vikrant.basotra@gmail.com",
+    "emailID": "XYZ@gmail.com",
     "seatHoldID": -22074960
-}%
+}
+'''
 
 3. PATCH : http://localhost:9191/ticketService/reserveSeats?onHoldId=1960160567 [Service used to Confirm the Booking by passing Hold Id]
-Sample response:
-
+**Sample Respone:**
+'''
 {
     "bookingStatus": "SUCCESS",
     "seatList": null,
     "bookingTS": "2020-07-29T13:13:13.260+00:00",
-    "emailID": "vikrant.basotra@gmail.com",
+    "emailID": "XYZ@gmail.com",
     "bookingID": 1960160567
 }
-
+'''
 
 
