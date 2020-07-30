@@ -76,4 +76,5 @@ B. ***confirm_booking*** : Contains the details of the confirmed Bookings.
 
 C. ***on_hold_booking*** : Contains the details of the Holds created on the Seats.
 
-
+//!//[Test Image 1](images/Tables.png)
+<img src=“images/Tables.png”>
