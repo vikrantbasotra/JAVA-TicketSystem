@@ -1,6 +1,7 @@
 # TicketSystem
 ## About the Application:
 Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour of a Tickiting System.
+Application provide 3 REST services which interacts with mariadb datbase.
 
 **There are few Assumptions which are as follows.**
 
@@ -16,7 +17,7 @@ Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour 
   
 4. Exception Handling is yet to be Added.
 
-5. Details of the restful Operations:
+**Details of the restful Operations**
 
   A. **GET** : http://localhost:9191/ticketService/seatsAvailable ***[Returns Total Availble Seats Open for Booking]***
   *Sample Respone:*
@@ -63,5 +64,15 @@ Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour 
     "bookingID": 1960160567
 }
 ```
+
+**Database Tables**
+The Appliocation creates the Tables on its own in mariadb and also intilizes the data in Seat Table.
+The details of the Tables used is :
+
+A. ***seat*** : Table contains details of the seats in Auditorium
+
+B. ***confirm_booking*** : Contains the details of the Holds created on the Seats
+
+C. ***on_hold_booking*** : Contains the details of the confirmed Bookings
 
 
