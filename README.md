@@ -1,6 +1,6 @@
 # TicketSystem
 ## About the Application:
-Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour of a Tickiting System.
+Its a Simple Spring boot Java RESTFUL Application built with Maven which simulates the behaviour of a Tickiting System.
 Application provide 3 REST services which interacts with mariadb datbase.
 On Start up Application intilizes teh Database if its not present.
 
