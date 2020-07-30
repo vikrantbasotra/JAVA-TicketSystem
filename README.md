@@ -2,6 +2,7 @@
 ## About the Application:
 Its a Simple Spring boot Java RESTFUL Application which simulates the behaviour of a Tickiting System.
 Application provide 3 REST services which interacts with mariadb datbase.
+On Start up Application intilizes teh Database if its not present.
 
 **There are few Assumptions which are as follows.**
 
@@ -69,10 +70,10 @@ Application provide 3 REST services which interacts with mariadb datbase.
 The Appliocation creates the Tables on its own in mariadb and also intilizes the data in Seat Table.
 The details of the Tables used is :
 
-A. ***seat*** : Table contains details of the seats in Auditorium
+A. ***seat*** : Table contains details of the seats in Auditorium.
 
-B. ***confirm_booking*** : Contains the details of the Holds created on the Seats
+B. ***confirm_booking*** : Contains the details of the confirmed Bookings.
 
-C. ***on_hold_booking*** : Contains the details of the confirmed Bookings
+C. ***on_hold_booking*** : Contains the details of the Holds created on the Seats.
 
 
